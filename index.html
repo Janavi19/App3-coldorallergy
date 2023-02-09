@@ -6,28 +6,31 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
-Tim Riedel
-Author 2
+1) Tim Riedel
+2) Janavi Kolpekwar 
+<!--Author 2 name edited to "Janavi Kolpekwar"--> 
  
 Further Information:
 http://cns.utexas.edu/fri
  
 Research Educator:
-Timothy Riedel
-triedel@utexas.edu
+1) Timothy Riedel
+   triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
- 
+The Goal of this Code is for individuals to evaluate if symptoms are a result of allergies or a cold. 
+<!--A brief decription of the Code and App-->
+<!--Disclaimer that the App will not diagnose any sort of medical condition--> 
 Known Issues:
-blah, blah, blah, blah
+(Ask Mentor) 
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
 	
    <head> 
-      <title>Hello World</title>  
+      <title>Cold or Allergies?</title>  
+      <!--App Title is edited to fit the purpose of the app: "Cold or Allergies?"-->
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="w3.css">
@@ -92,67 +95,91 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1>
+		<h1>Question 1</h1> 
+		<!--Between <h1></h1>, Header title is included--> 
 	</div>
 	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> Yes </a>
+	<!--If the user selects the Allergy button for this question, their symptom is confirmed Allergy--> 
 	<a href="#two" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> No </a>
+	<!--If the user selects the Cold button for this question, their symptom is not confirmed a Cold--> 
     	<div id="content" class="w3-container">
-        <p>Are your eyes watery or itchy?</p>    
+        <p>Are your eyes watery or itchy?</p> 
+	<!--Question addressed to the user--> 
     	</div>
 </div>
 
 <div class="page" id="two">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
+		<!--Between <h1></h1>, Header title is included--> 
 	</div>
 	<a href="#two" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> Yes </a>
+	<!--If the user selects the Cold button for this question, their symptom is confirmed Cold--> 
 	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> No </a>
+	<!--If the user selects the Allergy button for this question, their symptom is not confirmed Allergy--> 
     	<div id="content" class="w3-container">
-        <p>Do you have a fever?</p>    
+        <p>Do you have a fever?</p> 
+	<!--Question addressed to the user--> 
     	</div>
 </div>
 	
 <div class="page" id="three">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 2</h1>
+		<h1>Question 3</h1>
+		<!--Between <h1></h1>, Header title is included--> 
 	</div>
 	<a href="#two" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> Yes </a>
+	<!--If the user selects the Cold button for this question, their symptom is confirmed Cold--> 
 	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> No </a>
+	<!--If the user selects the Allergy button for this question, their symptom is not confirmed Allergy--> 
     	<div id="content" class="w3-container">
-        <p>Do you have a sore throat?</p>    
+        <p>Do you have a sore throat?</p> 
+	<!--Question addressed to the user--> 
     	</div>
 </div>
 	
 <div class="page" id="four">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1>
+		<h1>Question 4</h1>
+		<!--Between <h1></h1>, Header title is included--> 
 	</div>
 	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> Yes </a>
+	<!--If the user selects the Allergy button for this question, their symptom is confirmed Allergy--> 
 	<a href="#two" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> No </a>
+	<!--If the user selects the Cold button for this question, their symptom is not confirmed Cold--> 
     	<div id="content" class="w3-container">
-        <p>Are your symptoms seasonal or chronic?</p>    
+        <p>Are your symptoms seasonal or chronic?</p>  
+	<!--Question addressed to the user--> 
     	</div>
 </div>
 	
 <div class="page" id="five">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1>
+		<h1>Question 5</h1>
+		<!--Between <h1></h1>, Header title is included--> 
 	</div>
 	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> Yes </a>
+	<!--If the user selects the Allergy button for this question, their symptom is confirmed Allergy--> 
 	<a href="#two" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> No </a>
+	<!--If the user selects the Cold button for this question, their symptom is not confirmed Cold--> 
     	<div id="content" class="w3-container">
-        <p>Are you wheezing?</p>    
+        <p>Are you wheezing?</p>
+	<!--Question addressed to the user--> 
     	</div>
 </div>
 	
 <div class="page" id="six">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1>
+		<h1>Question 6</h1>
+		<!--Between <h1></h1>, Header title is included--> 
 	</div>
 	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> Yes </a>
+	<!--If the user selects the Allergy button for this question, their symptom is confirmed Allergy--> 
 	<a href="#two" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> No </a>
+	<!--If the user selects the Cold button for this question, their symptom is not confirmed Cold--> 
     	<div id="content" class="w3-container">
-        <p>Are you experiencing body aches or pain?</p>    
+        <p>Are you experiencing body aches or pain?</p>
+	<!--Question addressed to the user--> 
     	</div>
 </div>
 
