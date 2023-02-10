@@ -100,49 +100,47 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+</div>
 <!--Question 1 content here--> 
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1> <!--Between <h1></h1>, Header title is included-->
- 
 	</div>
+	
+	<div id="content" class="w3-container">
+	<p>Are your eyes watery or itchy?</p> <!--Question 1 addressed to the user-->
 	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> Yes </a>
 	<!--If the user selects the Allergy button for this question, their symptom is confirmed Allergy--> 
 	<a href="#two" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> No </a>
 	<!--If the user selects the Cold button for this question, their symptom is not confirmed a Cold--> 
-    	<div id="content" class="w3-container">
-        <p>Are your eyes watery or itchy?</p> 
-	<!--Question addressed to the user--> 
     	</div>
 </div>
 <!--Question 2 content here--> 
 <div class="page" id="two">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 2</h1>
-		<!--Between <h1></h1>, Header title is included--> 
+		<h1>Question 2</h1> <!--Between <h1></h1>, Header title is included--> 
 	</div>
+	
+	<div id="content" class="w3-container">
+	<p>Do you have a fever?</p> <!--Question addressed to the user--> 
 	<a href="#three" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> Yes </a>
 	<!--If the user selects the Cold button for this question, their symptom is confirmed Cold--> 
 	<a href="#three" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> No </a>
 	<!--If the user selects the Allergy button for this question, their symptom is not confirmed Allergy--> 
-    	<div id="content" class="w3-container">
-        <p>Do you have a fever?</p> 
-	<!--Question addressed to the user--> 
     	</div>
 </div>
 <!--Question 3 content here--> 	
 <div class="page" id="three">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 3</h1>
-		<!--Between <h1></h1>, Header title is included--> 
+		<h1>Question 3</h1> <!--Between <h1></h1>, Header title is included--> 
 	</div>
+	
+	<div id="content" class="w3-container">
+        <p>Do you have a sore throat?</p> <!--Question addressed to the user--> 
 	<a href="#four" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> Yes </a>
 	<!--If the user selects the Cold button for this question, their symptom is confirmed Cold--> 
 	<a href="#four" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> No </a>
 	<!--If the user selects the Allergy button for this question, their symptom is not confirmed Allergy--> 
-    	<div id="content" class="w3-container">
-        <p>Do you have a sore throat?</p> 
-	<!--Question addressed to the user--> 
     	</div>
 </div>
 <!--Question 4 content here--> 	
@@ -151,13 +149,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<h1>Question 4</h1>
 		<!--Between <h1></h1>, Header title is included--> 
 	</div>
+	
+	<div id="content" class="w3-container">
+	<p>Are your symptoms seasonal or chronic?</p>  <!--Question addressed to the user-->
 	<a href="#five" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> Yes </a>
 	<!--If the user selects the Allergy button for this question, their symptom is confirmed Allergy--> 
 	<a href="#five" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> No </a>
 	<!--If the user selects the Cold button for this question, their symptom is not confirmed Cold--> 
-    	<div id="content" class="w3-container">
-        <p>Are your symptoms seasonal or chronic?</p>  
-	<!--Question addressed to the user--> 
     	</div>
 </div>
 <!--Question 5 content here--> 	
@@ -166,13 +164,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<h1>Question 5</h1>
 		<!--Between <h1></h1>, Header title is included--> 
 	</div>
-	<a href="#six" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> Yes </a>
+	
+	<div id="content" class="w3-container">
+	<p>Are you wheezing?</p> <!--Question addressed to the user--> 
+	<a href="#six" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> Yes </a> 
 	<!--If the user selects the Allergy button for this question, their symptom is confirmed Allergy--> 
 	<a href="#six" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> No </a>
-	<!--If the user selects the Cold button for this question, their symptom is not confirmed Cold--> 
-    	<div id="content" class="w3-container">
-        <p>Are you wheezing?</p>
-	<!--Question addressed to the user--> 
+	<!--If the user selects the Cold button for this question, their symptom is not confirmed Cold-->
     	</div>
 </div>
 <!--Question 6 content here--> 	
@@ -181,13 +179,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<h1>Question 6</h1>
 		<!--Between <h1></h1>, Header title is included--> 
 	</div>
+	
+	<div id="content" class="w3-container">
+        <p>Are you experiencing body aches or pain?</p> <!--Question addressed to the user-->
 	<a href="#results" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> Yes </a>
 	<!--If the user selects the Allergy button for this question, their symptom is confirmed Allergy--> 
 	<a href="#results" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> No </a>
 	<!--If the user selects the Cold button for this question, their symptom is not confirmed Cold--> 
-    	<div id="content" class="w3-container">
-        <p>Are you experiencing body aches or pain?</p>
-	<!--Question addressed to the user--> 
     	</div>
 </div>
 	
