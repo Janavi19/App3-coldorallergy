@@ -22,7 +22,8 @@ The Goal of this Code is for individuals to evaluate if symptoms are a result of
 <!--A brief decription of the Code and App-->
 <!--Disclaimer that the App will not diagnose any sort of medical condition--> 
 Known Issues:
-(Ask Mentor) 
+When a User selects "yes" or "no" A number is displayed instead of a diagnosis of "allergies" or "cold" 
+App uses symptoms to determine diagnosis 
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -52,11 +53,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function coldAdd(){
             cold_count = cold_count + 1;
         }
-	
+	<!--function to compute final percentages--> 
 	function getResults(){
+		var resultText = document.getElementById("results");
 		var allergyPercent = (allergy/count / 4) = 100; //calculate percent chance of allergy by using allergy count and dividing by the number of questions times 100
 		var coldPercent = (cold_count / 4) = 100; //calculate percent chance of cold by using cold count and dividing by the number of questions times 100
-	            document.getElementById("result").innerHTML = "Probability it is allergies = " + allergyPercent + "<br> Probability it is cold = " + coldPercent; //print the output of the summation of both variables
+	        resultYext.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
+	}
   </script>
 
 
@@ -96,11 +99,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-
+<!--Question 1 content here--> 
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1> 
-		<!--Between <h1></h1>, Header title is included--> 
+		<h1>Question 1</h1> <!--Between <h1></h1>, Header title is included-->
+ 
 	</div>
 	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> Yes </a>
 	<!--If the user selects the Allergy button for this question, their symptom is confirmed Allergy--> 
@@ -111,7 +114,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!--Question addressed to the user--> 
     	</div>
 </div>
-
+<!--Question 2 content here--> 
 <div class="page" id="two">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
@@ -126,7 +129,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!--Question addressed to the user--> 
     	</div>
 </div>
-	
+<!--Question 3 content here--> 	
 <div class="page" id="three">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
@@ -141,7 +144,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!--Question addressed to the user--> 
     	</div>
 </div>
-	
+<!--Question 4 content here--> 	
 <div class="page" id="four">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
@@ -156,7 +159,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!--Question addressed to the user--> 
     	</div>
 </div>
-	
+<!--Question 5 content here--> 	
 <div class="page" id="five">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 5</h1>
@@ -171,15 +174,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!--Question addressed to the user--> 
     	</div>
 </div>
-	
+<!--Question 6 content here--> 	
 <div class="page" id="six">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 6</h1>
 		<!--Between <h1></h1>, Header title is included--> 
 	</div>
-	<a href="#end" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> Yes </a>
+	<a href="#results" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> Yes </a>
 	<!--If the user selects the Allergy button for this question, their symptom is confirmed Allergy--> 
-	<a href="#end" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> No </a>
+	<a href="#results" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> No </a>
 	<!--If the user selects the Cold button for this question, their symptom is not confirmed Cold--> 
     	<div id="content" class="w3-container">
         <p>Are you experiencing body aches or pain?</p>
@@ -188,7 +191,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </div>
 	
 <!--final page displaying results--> 
-<div class="page" id="end">
+<div class="page" id="results">
 	<div class="w3 container w3-flat-carrot">
 		<h1>Results</h1>
 	</div> 
@@ -199,6 +202,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 		<button onclick="getResults()">Results</button> 
 		<!--button pressed to generate results for percentages--> 
+	</div>
+
+</div>
 	
 
 
