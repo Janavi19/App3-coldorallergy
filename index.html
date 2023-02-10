@@ -56,8 +56,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 	//function to compute final percentages
 	function getResults(){
-		var allergyPercent = (allergy_count / 6) = 100; //calculate percent chance of allergy by using allergy count and dividing by the number of questions times 100
-		var coldPercent = (cold_count / 6) = 100; //calculate percent chance of cold by using cold count and dividing by the number of questions times 100
+		var allergyPercent = (allergy_count / 6) *100; //calculate percent chance of allergy by using allergy count and dividing by the number of questions times 100
+		var coldPercent = (cold_count / 6)* 100; //calculate percent chance of cold by using cold count and dividing by the number of questions times 100
 	        var resultText = document.getElementById("results");
 		resulText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
 	}
